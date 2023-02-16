@@ -227,7 +227,7 @@
                                 "Service Interrupt::Hang",
                                 "Service Interrupt::Panic",
                                 "Service Interrupt::Unrecoverable",
-                                "Indirect Discloure"
+                                "Indirect Disclosure"
                             ]
                         },
                         "hasLocation": {"$ref": "#/definitions/LogicalImpactLocation"}
@@ -304,6 +304,7 @@
                 "id",
                 "hasImpactMethod",
                 "affectsContext",
+                "hasEntityRole",
                 "resultsInImpact"
             ],
             "properties": {
@@ -330,6 +331,7 @@
             "required": [
                 "id",
                 "requiresAttackTheatre",
+                "hasExploitedWeakness",
                 "evidencedBySource",
                 "hasAction"
             ],
@@ -377,6 +379,7 @@
             "required": [
                 "hasIdentity",
                 "hasScenario",
+                "hasOriginatingProduct"
             ],
             "properties": {
                 "hasSectorOfInterest": {
